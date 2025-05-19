@@ -1,0 +1,13 @@
+{"user_id":"u_1000000000","user_name":"Admin","user_password":"Admin123","user_register_time":"2023-10-01","user_role":"admin"}
+{"user_id":"u_1000000000","user_name":"Admin","user_password":"Admin123","user_register_time":"2023-10-01","user_role":"admin"}
+{"user_id":"u_1000000001","user_name":"Johns","user_password":"Johns123","user_register_time":"19-51-2025_20:51:32","user_role":"customer","user_email":"johns@gmail.com","user_mobile":"0312456789"}
+{"user_id":"u_1000000002","user_name":"Isabella","user_password":"Isabella1234","user_register_time":"19-51-2025_20:51:58","user_role":"customer","user_email":"Isabella@gmail.com","user_mobile":"0378339848"}
+{"user_id":"u_1000000003","user_name":"Benjamin","user_password":"Benjamin1234","user_register_time":"19-51-2025_20:51:58","user_role":"customer","user_email":"Benjamin@gmail.com","user_mobile":"0318304425"}
+{"user_id":"u_1000000004","user_name":"Sophia","user_password":"Sophia1234","user_register_time":"19-51-2025_20:51:58","user_role":"customer","user_email":"Sophia@gmail.com","user_mobile":"0389385732"}
+{"user_id":"u_1000000005","user_name":"Matthew","user_password":"Matthew1234","user_register_time":"19-51-2025_20:51:58","user_role":"customer","user_email":"Matthew@gmail.com","user_mobile":"0347325344"}
+{"user_id":"u_1000000006","user_name":"Oliver","user_password":"Oliver1234","user_register_time":"19-51-2025_20:51:58","user_role":"customer","user_email":"Oliver@gmail.com","user_mobile":"0391659089"}
+{"user_id":"u_1000000007","user_name":"Scarlett","user_password":"Scarlett1234","user_register_time":"19-51-2025_20:51:58","user_role":"customer","user_email":"Scarlett@gmail.com","user_mobile":"0350466639"}
+{"user_id":"u_1000000008","user_name":"Gabriel","user_password":"Gabriel1234","user_register_time":"19-51-2025_20:51:58","user_role":"customer","user_email":"Gabriel@gmail.com","user_mobile":"0387443113"}
+{"user_id":"u_1000000009","user_name":"Adeline","user_password":"Adeline1234","user_register_time":"19-51-2025_20:51:58","user_role":"customer","user_email":"Adeline@gmail.com","user_mobile":"0350679989"}
+{"user_id":"u_1000000010","user_name":"Eleanor","user_password":"Eleanor1234","user_register_time":"19-51-2025_20:51:58","user_role":"customer","user_email":"Eleanor@gmail.com","user_mobile":"0310931627"}
+{"user_id":"u_1000000011","user_name":"Juliana","user_password":"Juliana1234","user_register_time":"19-51-2025_20:51:58","user_role":"customer","user_email":"Juliana@gmail.com","user_mobile":"0330648487"}

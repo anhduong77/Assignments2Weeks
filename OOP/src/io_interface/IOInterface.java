@@ -1,6 +1,5 @@
 package io_interface;
 import java.util.*;
-
 import list_result.*;
 import operation.*;
 import user.*;
@@ -41,8 +40,7 @@ public class IOInterface {
             case 1:
                 String[] loginInput = getUserInput("Enter your username and password: ", 2);
                 UserOperation userInstance = UserOperation.getInstance();
-                User user = userInstance.login(loginInput[0], loginInput
-                [1]);
+                User user = userInstance.login(loginInput[0], loginInput[1]);
                 if (user == null) {
                     printErrorMessage("mainMenu", "Login failed. Please try again.");
                     break;
@@ -62,7 +60,8 @@ public class IOInterface {
                 printMessage("Exiting...");
                 return;
             default:
-                System.out.println("Invalid choice. Please try again.");
+                printErrorMessage("mainMenu", "Invalid choice. Please try again.");
+                break;
         }
         
     }
@@ -124,13 +123,13 @@ public class IOInterface {
         }
 
         else if (choice == 5) {
-            System.out.println("Generating test data...");
+            printMessage("Generating test data...");
             orderInstance.generateTestOrderData();
-            System.out.println("Test data generated successfully.");
+            printMessage("Test order data generated successfully.");
             adminMenu();
         }
         else if (choice == 6) {
-            System.out.println("Generating all statistical figures...");
+            printMessage("Generating all statistical figures...");
             productInstance.generateDiscountFigure();
             productInstance.generateLikesCountFigure();
             productInstance.generateDiscountLikesCountFigure();
@@ -138,18 +137,17 @@ public class IOInterface {
 
             orderInstance.generateAllCustomerConsumptionFigure();
             orderInstance.generateAllTop10BestSellersFigure();
-            
-            System.out.println("All statistical figures generated successfully.");
+            printMessage("All statistical figures generated successfully.");
             adminMenu();
         }
         else if (choice == 7) {
-            System.out.println("Deleting all data...");
+            printMessage("Deleting all products...");
             productInstance.deleteAllProducts();
             customerInstance.deleteAllCustomer();
             orderInstance.deleteAllOrders();
             userInstance.deleteUsers();
             orderInstance.deleteAllFigures();
-            System.out.println("All data deleted successfully.");
+            printMessage("All products deleted successfully.");
             adminMenu();
         }
         else if (choice == 8) {
@@ -157,9 +155,8 @@ public class IOInterface {
             mainMenu();
         } else {
             printErrorMessage("adminMenu", "Invalid choice. Please try again.");
-            mainMenu();
-        }
-           
+    
+        }   
     }
 
     public void showList(String userRole, String listType, ArrayList<ArrayList<String>> list, int page, int totalPages) {
@@ -177,13 +174,14 @@ public class IOInterface {
              String[] nextInput = getUserInput("Enter 'n' for next page, 'p' for previous page, or 'b' to go back: ", 1);
                 if (nextInput[0].equals("n")) {
                     if (page == list.size() - 1) {
-                        System.out.println("This is the last page.");
+                        printMessage("This is the last page.");
+                        
                         continue;
                     }
                     page++;
                 } else if (nextInput[0].equals("p")) {
                     if (page == 0) {
-                        System.out.println("This is the first page.");
+                        printMessage("This is the first page.");
                         continue;
                     }
                     page--;
@@ -191,8 +189,9 @@ public class IOInterface {
                     break;
                 
                 } else {
-                    System.out.println("Invalid input. Please try again.");
-                    break;
+                    printErrorMessage("showList", "Invalid input. Please try again.");
+                    
+                    
                 }
         }
         
@@ -204,6 +203,13 @@ public class IOInterface {
 
     public void printErrorMessage(String errSource, String message) {
         System.err.println("Error in " + errSource + ": " + message);
+        if (errSource.equals("mainMenu")) {
+            mainMenu();
+        } else if (errSource.equals("adminMenu")) {
+            adminMenu();
+        } else {
+            return;
+        }
         
     }
 
