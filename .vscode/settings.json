@@ -1,0 +1,12 @@
+{
+    "java.project.sourcePaths": [
+        "OOP/src",
+        "data"
+    ],
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\ASUS\\Downloads\\json-20210307.jar",
+        "c:\\Users\\ASUS\\Downloads\\jfreechart-1.5.3-sources.jar",
+        "c:\\Users\\ASUS\\Downloads\\jfreechart-1.5.3.jar"
+    ]
+}
